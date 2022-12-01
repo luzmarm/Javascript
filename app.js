@@ -6,7 +6,7 @@
 //4 Preguntar si desea registrarse en la página
 //5 Salir
 
-const nombreUsuario = parseInt(prompt("Hola!!! Es usted cliente? 1) Sí. 2) No."));
+/*const nombreUsuario = parseInt(prompt("Hola!!! Es usted cliente? 1) Sí. 2) No."));
 if (nombreUsuario == 1) {
     parseInt(prompt("Ingrese su nombre y apellido para validar sus datos"));
     alert("Bienvenido");
@@ -149,4 +149,4 @@ let mascotaOtro = 0;
     
             
     
-             }
+             }*/

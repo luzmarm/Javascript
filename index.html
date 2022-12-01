@@ -1,53 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Tienda de mascotas</title>
-</head>
-<body>
-<header class="encabezado">
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
 
-</header>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Tienda de mascotas</title>
+</head>
+
+<body>
+  <header>
+
+    <h1> Tienda</h1>
+    <div class="container-icon">
+      <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+        </path>
+      </svg>
+      <div class="count-prducts">
+        <span id="contador-productos">0</span>
+      </div>
+      <div class="container-cart-products hidden-cart">
+        <div class="cart-product">
+          <div class="cart-total">
+            <h3>total</h3>
+            <div class="span-total-pagar">4500</div>
+          </div>
+          <span class="cantidad-producto--carrito">1</span>
+          <p class="titulo-producto-carrito">Old prince</p>
+          <div class="span-precio-producto-carrito">4200</div>
+
+          <div class="info-cart-product">
+          </div>
+          <svg class="icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+
+
+  </header>
+  <div class="container-item">
+    <div class="item">
+      <figure>
+        <img src="./img/proplan.jpg" alt="proplan">
+        <div class="info-producto">
+          <h2> Proplan</h2>
+          <p class="precio"> ARS 4200 </p>
+          <button> Añadir al carrito. </button>
+        </div>
+      </figure>
+    </div>
+
+    <div class="item">
+      <figure>
+        <img src="./img/proplan.jpg" alt="proplan">
+        <div class="info-producto">
+          <h2> Proplan</h2>
+          <p class="precio"> ARS 4200 </p>
+          <button> Añadir al carrito. </button>
+        </div>
+      </figure>
+    </div>
+
+    <div class="item">
+      <figure>
+        <img src="img/royalcaninperro.jpg" alt="royalCan">
+        <div class="info-producto">
+          <h2> Royal Canin</h2>
+          <p class="precio"> ARS 5200 </p>
+          <button> Añadir al carrito. </button>
+        </div>
+      </figure>
+    </div>
+
+    <div class="item">
+      <figure>
+        <img src="./img/excellent.jpg" alt="excellent">
+        <div class="info-producto">
+          <h2> Excellent</h2>
+          <p class="precio"> ARS 3600 </p>
+          <button> Añadir al carrito. </button>
+        </div>
+      </figure>
+    </div>
+
+    <div class="item">
+      <figure>
+        <img src="./img/Old-Prince-Original-Recipe.png.jpg" alt="oldprince">
+        <div class="info-producto">
+          <h2> Old prince</h2>
+          <p class="precio"> ARS 4950 </p>
+          <button> Añadir al carrito. </button>
+        </div>
+      </figure>
+    </div>
+  </div>
+
 </body>
 <script src="app.js"> </script>
+
 </html>
