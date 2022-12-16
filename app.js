@@ -6,14 +6,78 @@
 //4 Preguntar si desea registrarse en la página
 //5 Salir
 
-const btnCart = document.querySelector(".container-icon");
-const containerCartProducts = document.querySelector("container-cart-products");
+//const btnCart = document.querySelector(".container-icon");
+//const containerCartProducts = document.querySelector("container-cart-products");
 
+
+/*const productos = [{id: 1,
+    nombre: "ProPlan Perros",
+    precio: 4200,
+    img: "proplan.jpg"
+},
+{
+    id: 2,
+    nombre: "Royal Canin Perros",
+    precio: 5200,
+    img: "royalcaninperro.jpg"
+},
+
+{
+    id: 3,
+    nombre: "Excellent Perros",
+    precio: 4200,
+    img: "excellent.jpg"
+},
+
+{id: 4,
+    nombre: "Old Prince",
+    precio: 4950,
+    img: "Old-Prince-Original-Recipe.png.jpg"
+},
+{
+    id: 5,
+    nombre: "Royal Canin Gato",
+    precio: "4950",
+    img: "royalcaningato.png"
+
+},
+{
+    id: 6,
+    nombre: "Excellent gatitos",
+    precio: "3200",
+    img: "excellentgatitos.jpg"
+
+},
+
+{
+    id: 7,
+    nombre: "CatChow",
+    precio: "1550",
+    img: "catchow.jpg"
+}
+]
 btnCart.addEventListener("click", () => {
-containerCartProducts.classList.toggle("hidden-cart");
+    containerCartProducts.classList.toggle("hidden-cart");
 })
 
 
+productos.foreach((product) => {
+    let content = document.createElement("div");
+    content.innerHTML = ` `
+});
+
+let carrito = [];
+
+productos.foreach((product) =>{
+let content = document.createElement("div");
+content.innerHTL = `
+<img src= "${product.img}">
+<h3>${product.nombre}</h3>
+<p>${product.precio}$</p>
+
+`
+
+});
 
 const nombreUsuario = parseInt(prompt("Hola!!! Es usted cliente? 1) Sí. 2) No."));
 if (nombreUsuario == 1) {
@@ -151,4 +215,4 @@ if (existe) {
 
 
 
-}
+}*/
