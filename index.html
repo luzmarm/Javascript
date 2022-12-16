@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <title>Tienda de mascotas</title>
+  <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
 <body>
   <header>
-
-    <h1> Tienda</h1>
+    <h1> Tienda de mascotas</h1>
     <div class="container-icon">
-      <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg class="icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
         </path>
@@ -28,13 +28,14 @@
             <h3>total</h3>
             <div class="span-total-pagar">4500</div>
           </div>
-          <span class="cantidad-producto--carrito">1</span>
+          <span class="cantidad-producto-carrito">1</span>
           <p class="titulo-producto-carrito">Old prince</p>
           <div class="span-precio-producto-carrito">4200</div>
 
           <div class="info-cart-product">
           </div>
-          <svg class="icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg class="icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </div>
@@ -44,7 +45,7 @@
 
 
   </header>
-  <div class="container-item">
+  <div class="container-items">
     <div class="item">
       <figure>
         <img src="./img/proplan.jpg" alt="proplan">
@@ -56,16 +57,7 @@
       </figure>
     </div>
 
-    <div class="item">
-      <figure>
-        <img src="./img/proplan.jpg" alt="proplan">
-        <div class="info-producto">
-          <h2> Proplan</h2>
-          <p class="precio"> ARS 4200 </p>
-          <button> Añadir al carrito. </button>
-        </div>
-      </figure>
-    </div>
+
 
     <div class="item">
       <figure>
@@ -99,9 +91,44 @@
         </div>
       </figure>
     </div>
+
+    <h2>Alimentos para gatos</h2>
+
+    <div class="item">
+      <figure>
+        <img src="./img/royalcaningato.png" alt="royalCanin">
+        <div class="info-producto">
+          <h2> Royal Canin </h2>
+          <p class="precio"> ARS 4950 </p>
+          <button> Añadir al carrito. </button>
+        </div>
+      </figure>
+    </div>
+
+    <div class="item">
+      <figure>
+        <img src="./img/excellentgatitos.jpg" alt="excellent">
+        <div class="info-producto">
+          <h2> Excellent</h2>
+          <p class="precio"> ARS 3200 </p>
+          <button> Añadir al carrito. </button>
+        </div>
+      </figure>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="./img/catchow.jpg" alt="catChow">
+        <div class="info-producto">
+          <h2> Old prince</h2>
+          <p class="precio"> ARS 1550 </p>
+          <button> Añadir al carrito. </button>
+        </div>
+      </figure>
+    </div>
   </div>
 
 </body>
-<script src="app.js"> </script>
 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="app.js"> </script>
 </html>
